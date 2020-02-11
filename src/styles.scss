@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: LifeCraft;
+  src: url(assets/LifeCraft.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: FrizQuadrata;
+  src: url(assets/FrizQuadrata.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: FrizQuadrata;
+  font-weight: 700;
+  src: url(assets/FrizQuadrataBold.otf) format("opentype");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,63 @@
+@import "../../../styles/variables.scss";
+
+button {
+  position: absolute;
+  border: 0;
+  background: transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  width: 55%;
+  outline: none;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .white-highlight {
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.1);
+    width: 97%;
+    height: 80%;
+    left: 2%;
+    top: 12%;
+    border-radius: 10%;
+  }
+
+  p {
+    position: absolute;
+    margin: 1px 0 0 0;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: "FrizQuadrata";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    color: $primary-font-color;
+    text-shadow: 1px 1px 2px #000;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .white-highlight {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    transform: translateX(-50%) scale(0.93);
+    transform-origin: bottom;
+
+    .white-highlight {
+      background: rgba(0, 0, 0, 0.4);
+      opacity: 0.6;
+    }
+  }
+}

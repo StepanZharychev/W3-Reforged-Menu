@@ -1,0 +1,8 @@
+<div class="main-menu-container" [ngClass]="{'open': status === true, 'close': status === false, 'initial': status === null}">
+  <img src="assets/MainMenu.png">
+  <app-main-menu-button [bottom]="46.9" [label]="'campaign'"></app-main-menu-button>
+  <app-main-menu-button [bottom]="37.8" [label]="'versus'"></app-main-menu-button>
+  <app-main-menu-button [bottom]="28.8" [label]="'custom games'"></app-main-menu-button>
+  <app-main-menu-button [bottom]="19.7" [label]="'replay'"></app-main-menu-button>
+  <app-main-menu-button [bottom]="10.7" [label]="'collection'"></app-main-menu-button>
+</div>
