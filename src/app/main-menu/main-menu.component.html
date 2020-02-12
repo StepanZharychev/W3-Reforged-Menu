@@ -5,4 +5,6 @@
   <app-main-menu-button [bottom]="28.8" [label]="'custom games'"></app-main-menu-button>
   <app-main-menu-button [bottom]="19.7" [label]="'replay'"></app-main-menu-button>
   <app-main-menu-button [bottom]="10.7" [label]="'collection'"></app-main-menu-button>
+  <p class="version-text" [ngClass]="{'visible': textStatus}">{{text.version}}</p>
+  <p class="copyright-text" [ngClass]="{'visible': textStatus}">{{text.copyright}}</p>
 </div>

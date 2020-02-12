@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  version: '1.32.0.22333',
+  updateTime: '2020-02-12T12:27:20.243Z',
+  copyright: '© Not So Blizzard Anymore.'
 };
 
 /*
