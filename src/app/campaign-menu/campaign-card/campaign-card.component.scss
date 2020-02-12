@@ -1,0 +1,73 @@
+@import "../../../styles/variables";
+
+.campaign-card {
+  height: 100%;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.04);
+  }
+
+  &.locked {
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  .main-image {
+    position: absolute;
+    left: 2%;
+    top: 1%;
+    height: 98%;
+  }
+
+  .border-image {
+    position: relative;
+  }
+
+  .text-container {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    padding: 0 20px;
+
+    .logo {
+      height: 75px;
+    }
+
+    .titles {
+      margin-left: 5px;
+
+      .title {
+        font-size: 14px;
+
+        &.red {
+          color: $plate-red-font-color;
+        }
+
+        &.blue {
+          color: $plate-blue-font-color;
+        }
+      }
+
+      .subtitle {
+        font-size: 22px;
+      }
+
+      p {
+        margin: 0;
+        text-transform: uppercase;
+        font-family: "FrizQuadrata";
+        color: $plate-font-color;
+        text-shadow: 2px 2px 2px #000;
+        font-weight: 700;
+      }
+    }
+  }
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

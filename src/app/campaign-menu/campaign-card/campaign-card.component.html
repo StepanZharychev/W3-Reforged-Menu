@@ -1,0 +1,18 @@
+<div class="campaign-card" [ngClass]="{'locked': locked}">
+  <ng-container *ngIf="!locked">
+    <img class="main-image" [src]="src">
+    <img class="border-image" src="assets/CampaignPlate.png">
+    <div class="text-container">
+      <div class="logo">
+        <img src="assets/ReforgedLogo.png">
+      </div>
+      <div class="titles">
+        <p class="title" [ngClass]="{'red': style === 'red', 'blue': style === 'blue'}">{{title}}</p>
+        <p class="subtitle">{{subtitle}}</p>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="locked">
+    <img src="assets/CampaignLockedPlate.png">
+  </ng-container>
+</div>

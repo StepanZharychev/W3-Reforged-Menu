@@ -1,3 +1,17 @@
-<div class="main-menu-container" [ngClass]="{'open': status === true, 'close': status === false, 'initial': status === null}">
+<div class="main-menu-container"
+     [ngClass]="{'open': status === true, 'close': status === false, 'initial': status === null}">
   <img src="assets/CampaignMenu.png">
+  <app-campaign-button [top]="52.3" [left]="0.5" [reversed]="true" [onClick]="listBack()"
+                       [disabled]="!backAvailable"></app-campaign-button>
+  <div class="campaign-cards-containers">
+    <app-campaign-card *ngFor="let card of availableCards"
+                       [ngClass]="{'locked': card.locked}"
+                       [src]="card.imgSrc"
+                       [locked]="card.locked"
+                       [title]="card.title"
+                       [subtitle]="card.subtitle"
+                       [style]="card.style"></app-campaign-card>
+  </div>
+  <app-campaign-button [top]="52.3" [left]="96" [onClick]="listForward()"
+                       [disabled]="!forwardAvailable"></app-campaign-button>
 </div>

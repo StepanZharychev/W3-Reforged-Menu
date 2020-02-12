@@ -7,13 +7,17 @@ import {MainMenuComponent} from './main-menu/main-menu.component';
 import {CommunicationService} from './services/communication/communication.service';
 import { MainMenuButtonComponent } from './main-menu/main-menu-button/main-menu-button.component';
 import { CampaignMenuComponent } from './campaign-menu/campaign-menu.component';
+import { CampaignButtonComponent } from './campaign-menu/campaign-button/campaign-button.component';
+import { CampaignCardComponent } from './campaign-menu/campaign-card/campaign-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainMenuComponent,
     MainMenuButtonComponent,
-    CampaignMenuComponent
+    CampaignMenuComponent,
+    CampaignButtonComponent,
+    CampaignCardComponent
   ],
   imports: [
     BrowserModule,
