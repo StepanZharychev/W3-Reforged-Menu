@@ -1,0 +1,47 @@
+@keyframes initialAppear {
+  0% {
+    transform: translateY(-100%);
+  }
+  80% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-7%);
+  }
+}
+
+@keyframes baseAppear {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.main-menu-container {
+  position: absolute;
+  top: 0;
+  left: 12.5vw;
+  width: 75%;
+  height: 88vh;
+  transform: translateY(-7%);
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &.open {
+    animation-fill-mode: forwards;
+    animation-name: initialAppear;
+    animation-duration: 1s;
+  }
+
+  &.close {
+    animation-fill-mode: forwards;
+    animation-name: baseAppear;
+    animation-duration: 0.7s;
+  }
+
+  &.initial {
+    transform: translateY(-100%);
+  }
+}

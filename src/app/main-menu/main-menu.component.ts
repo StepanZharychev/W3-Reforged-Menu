@@ -53,4 +53,13 @@ export class MainMenuComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.disposeViewEvents();
   }
+
+  public openCampaign() {
+    return () => {
+      this.communication.sendMainMenuToggle(false);
+      setTimeout(() => {
+        this.communication.sendCampaignMenuToggle(true);
+      }, 700);
+    };
+  }
 }

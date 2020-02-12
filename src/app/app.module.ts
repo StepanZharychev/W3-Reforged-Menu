@@ -6,12 +6,14 @@ import {AppComponent} from './app.component';
 import {MainMenuComponent} from './main-menu/main-menu.component';
 import {CommunicationService} from './services/communication/communication.service';
 import { MainMenuButtonComponent } from './main-menu/main-menu-button/main-menu-button.component';
+import { CampaignMenuComponent } from './campaign-menu/campaign-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainMenuComponent,
-    MainMenuButtonComponent
+    MainMenuButtonComponent,
+    CampaignMenuComponent
   ],
   imports: [
     BrowserModule,

@@ -11,9 +11,19 @@ export class MainMenuButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public handleClick(event: Event) {
+    event.stopPropagation();
+    event.preventDefault();
+
+    this.onClick && this.onClick();
+  }
+
   @Input()
   public bottom = 0;
 
   @Input()
   public label = '';
+
+  @Input()
+  public onClick = null as (...args: any[]) => any;
 }

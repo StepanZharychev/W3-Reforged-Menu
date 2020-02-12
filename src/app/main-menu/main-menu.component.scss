@@ -1,14 +1,14 @@
 @keyframes initialAppear {
-  0% {
-    transform: translateY(-100%);
-  }
-  80% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-9.3%);
-  }
-}
+   0% {
+     transform: translateY(-100%);
+   }
+   80% {
+     transform: translateY(0%);
+   }
+   100% {
+     transform: translateY(-9.3%);
+   }
+ }
 
 @keyframes baseAppear {
   100% {
